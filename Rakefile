@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Import other external rake tasks
 Dir.glob("tasks/*.rake").each { |r| import r }
 
