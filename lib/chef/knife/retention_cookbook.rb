@@ -87,7 +87,7 @@ class Chef
 
       def version_info_for_cookbook(cookbook_name)
         nodes = all_nodes_for_cookbook(cookbook_name)
-        versions = Chef::CookbookVersion.available_versions(cookbook_name).map! do |version|
+        versions = Chef::CookbookVersion.available_versions(cookbook_name).map do |version|
           used_by_node = nodes.any? { |n| n["cookbooks"][cookbook_name]["version"] == version }
 
           {
