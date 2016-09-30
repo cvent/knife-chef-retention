@@ -3,8 +3,8 @@ require "chef/knife"
 
 class Chef
   class Knife
-    class RetentionCookbook < Knife
-      banner "knife retention cookbook [COOKBOOK] (options)"
+    class CookbookRetention < Knife
+      banner "knife cookbook retention [COOKBOOK] (options)"
 
       deps do
         require "chef/search/query"
