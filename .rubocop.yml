@@ -8,3 +8,5 @@ Metrics/LineLength:
   AllowURI: true
 Documentation:
   Enabled: false
+Metrics/AbcSize:
+  Max: 18
