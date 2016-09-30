@@ -23,14 +23,32 @@ gem install knife-chef-retention
 ## Usage
 
 Everything suppose to be organized in an easy to navigate way.  Everything is
-nested under `knife inventory` and the commands should be self documenting.
+nested under its corresponding resource.  For example cookbook retentions are
+under `knife cookbook` and the commands should be self documenting.
+
 Below are some simple examples
 
 ```bash
-knife retention
+knife cookbook
 
-** RETENTION COMMANDS **
-knife retention cookbooks
+** COOKBOOK COMMANDS **
+...
+knife cookbook retention [COOKBOOK] (options)
+...
+
+
+knife cookbook retention windows
+Running in Evaluation Mode no cookbooks will be deleted
+Latest Version: 2.0.2
+Unused Version: 1.34.8
+Unused Version: 1.36.0
+Unused Version: 1.36.1
+Unused Version: 1.36.6
+Unused Version: 1.37.0
+Unused Version: 1.38.0
+Unused Version: 1.38.1
+Unused Version: 1.38.2
+Unused Version: 1.38.3
 ```
 
 License and Author
