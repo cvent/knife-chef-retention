@@ -42,14 +42,16 @@ Running in Evaluation Mode no cookbooks will be deleted
 Latest Version: 2.0.2
 Unused Version: 1.34.8
 Unused Version: 1.36.0
-Unused Version: 1.36.1
-Unused Version: 1.36.6
-Unused Version: 1.37.0
-Unused Version: 1.38.0
-Unused Version: 1.38.1
-Unused Version: 1.38.2
+...
 Unused Version: 1.38.3
 ```
+
+### Options
+
+`--clobber` - This will actually delete cookbooks while prompting
+`-y` - This will not ask when deleting cookbooks
+`--extra-versions` - Specifies the total number of extra unused versions to keep around (Default 1)
+
 
 License and Author
 ==================
