@@ -97,7 +97,7 @@ class Chef
 
       def save_some_versions(versions, extra_versions)
         # Just removes the top X which since we sort is the top X newest versions
-        versions.slice(0, versions.length - extra_versions)
+        Array(versions.slice(0, versions.length - extra_versions))
       end
 
       def cookbook_versions(cookbook_name)
