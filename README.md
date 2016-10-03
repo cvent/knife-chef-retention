@@ -48,9 +48,9 @@ Unused Version: 1.38.3
 
 ### Options
 
-`--clobber` - This will actually delete cookbooks while prompting
-`-y` - This will not ask when deleting cookbooks
-`--extra-versions` - Specifies the total number of extra unused versions to keep around (Default 1)
+ - `--clobber` - This will actually delete cookbooks while prompting
+ - `-y` - This will not ask when deleting cookbooks
+ - `--extra-versions` - Specifies the total number of extra unused versions to keep around (Default 1)
 
 
 License and Author
