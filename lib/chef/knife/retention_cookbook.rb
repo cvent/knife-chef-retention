@@ -110,8 +110,7 @@ class Chef
             used: used_by_node
           }
         end
-
-        versions.sort_by { |v| v[:version] }
+        versions.sort { |x, y| Gem::Version.new(x[:version]) <=> Gem::Version.new(y[:version]) }
       end
 
       def search_nodes(query)
