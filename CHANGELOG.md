@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.3.0](https://github.com/cvent/knife-chef-retention/tree/v0.3.0) (2019-04-10)
+[Full Changelog](https://github.com/cvent/knife-chef-retention/compare/v0.2.0...v0.3.0)
+
+**Merged pull requests:**
+
+- Fix cookbook version sorting [\#7](https://github.com/cvent/knife-chef-retention/pull/7) ([majormoses](https://github.com/majormoses))
+
 ## [v0.2.0](https://github.com/cvent/knife-chef-retention/tree/v0.2.0) (2016-10-03)
 [Full Changelog](https://github.com/cvent/knife-chef-retention/compare/v0.0.1...v0.2.0)
 
