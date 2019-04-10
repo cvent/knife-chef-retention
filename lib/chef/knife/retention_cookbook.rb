@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "chef/knife"
 
 class Chef
@@ -23,6 +24,13 @@ class Chef
              long: "--extra-versions VALUE",
              description: "The number of extra versions to keep (Default: 1)",
              default: 1
+
+      option :ignore_used,
+             short: "-i",
+             long: "--ignore-used",
+             description: "Ignore used cookbooks, useful where stale inventory is a thing",
+             boolean: true,
+             default: false
 
       def run
         cookbook_name = name_args[0] if name_args.length.positive?
@@ -89,9 +97,8 @@ class Chef
         unused_versions = cookbook_versions(cookbook).take_while do |version|
           # These are package that are not used and are considered old as they
           # are after the first used version still
-          version unless version[:used]
+          version unless version[:used] && !config[:ignore_used]
         end
-
         save_some_versions(unused_versions, extra_versions)
       end
 
@@ -110,8 +117,7 @@ class Chef
             used: used_by_node
           }
         end
-
-        versions.sort_by { |v| v[:version] }
+        versions.sort { |x, y| Gem::Version.new(x[:version]) <=> Gem::Version.new(y[:version]) }
       end
 
       def search_nodes(query)
