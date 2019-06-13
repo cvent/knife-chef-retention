@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = "~> 2.3"
 
-  s.add_dependency "chef", "~> 12.11"
+  s.add_dependency "chef", ">= 12.11", "< 16"
 end
