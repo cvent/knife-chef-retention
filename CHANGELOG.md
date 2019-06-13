@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.4.0](https://github.com/cvent/knife-chef-retention/tree/v0.4.0) (2019-06-13)
+[Full Changelog](https://github.com/cvent/knife-chef-retention/compare/v0.3.0...v0.4.0)
+
+**Merged pull requests:**
+
+- Update Chef dependency  to be \>= 12.11 and \< 16 [\#9](https://github.com/cvent/knife-chef-retention/pull/9) ([amcappelli](https://github.com/amcappelli))
+
 ## [v0.3.0](https://github.com/cvent/knife-chef-retention/tree/v0.3.0) (2019-04-10)
 [Full Changelog](https://github.com/cvent/knife-chef-retention/compare/v0.2.0...v0.3.0)
 
