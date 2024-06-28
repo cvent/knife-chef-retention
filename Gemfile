@@ -5,8 +5,9 @@ source "https://rubygems.org"
 gemspec
 
 group :development do
-  gem "bundler", "~> 1.6"
-  gem "github_changelog_generator", "~> 1.13"
-  gem "rake", "~> 11.1"
-  gem "rubocop", "~> 0.38"
+  gem "bundler", "~> 2.3"
+  gem "github_changelog_generator", "~> 1.16"
+  gem "rake", "~> 13.2"
+  gem "rubocop", "~> 1.64"
+  gem "knife", "~> 18.4"
 end
