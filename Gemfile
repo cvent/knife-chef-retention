@@ -9,5 +9,5 @@ group :development do
   gem "github_changelog_generator", "~> 1.16"
   gem "rake", "~> 13.2"
   gem "rubocop", "~> 1.64"
-  gem "knife", "~> 18.4"
+  gem "knife", ">= 17.10"
 end
