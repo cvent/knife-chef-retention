@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development do
-  gem "bundler", "~> 2.3"
+  gem "bundler", "~> 2.5", ">= 2.5.22"
   gem "github_changelog_generator", "~> 1.16"
   gem "rake", "~> 13.2"
   gem "rubocop", "~> 1.64"
