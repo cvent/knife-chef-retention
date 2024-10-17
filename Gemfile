@@ -8,6 +8,6 @@ group :development do
   gem "bundler", "~> 2.3"
   gem "github_changelog_generator", "~> 1.16"
   gem "rake", "~> 13.2"
-  gem "rubocop", "~> 1.64"
+  gem "rubocop", "~> 1.67"
   gem "knife", ">= 17.10"
 end
